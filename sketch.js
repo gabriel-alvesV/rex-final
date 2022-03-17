@@ -114,8 +114,9 @@ grupoInimigos.setVelocityXEach(0);
 grupoNuvens.setVelocityXEach(0);
 grupoInimigos.setLifetimeEach(-1);
 grupoNuvens.setLifetimeEach(-1);
-if(mousePressedOver(restart)){
+if(mousePressedOver(restart)||touches.length>0){
     reset();
+    touches=[];
 }
 
 }
